@@ -23,7 +23,7 @@ const submit = async (formEL: FormInstance | undefined) => {
       })
       return
     }
-    router.push({name: 'index'})
+    router.push({name: 'layout'})
   })
 }
 </script>

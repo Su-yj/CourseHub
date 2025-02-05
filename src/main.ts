@@ -1,7 +1,10 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router';
+import App from '@/App.vue'
+import router from '@/router'
+import SvgIcon from '@/components/SvgIcon.vue'
+import '@/assets/js/iconfont.js'
 
+import 'element-plus/theme-chalk/dark/css-vars.css'
 import './assets/css/style.css'
 import './assets/css/reset.css'
 import 'element-plus/dist/index.css'
@@ -12,6 +15,7 @@ import './demos/ipc'
 
 const app = createApp(App)
 app.use(router)
+app.component('SvgIcon', SvgIcon)
 
 app.mount('#app')
   .$nextTick(() => {
